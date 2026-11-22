@@ -37,8 +37,15 @@ Salida:
 ![Ejecución del programa, validaciones](Validacion_de_entradas_positivas.png)
 
 ## Estructura utilizada y su función
-Para este desarrollo utilicé **arreglos unidimensionales**, **ciclos repetitivos** y **estructuras condicionales**, dividiendo el flujo del programa en bloques secuenciales claros y respetando las restricciones de usar una constante fija (`DIAS = 7`), no emplear matrices ni `vector` y mantener todo el código en un único archivo:
-- **Arreglos unidimensionales (`dias`, `ventas` y `dias_sobre_promedio`):** Los utilicé como estructura central de almacenamiento. Los dos primeros trabajan en paralelo compartiendo el mismo índice para vincular cada día con su monto de venta, mientras que el tercero actúa como arreglo auxiliar para guardar únicamente los nombres de los días que superaron el promedio.
-- **Ciclos de recorrido (`for`):** Los implementé apoyados en la constante `DIAS` para iterar sobre las 7 posiciones en fases independientes: captura de datos, listado y acumulación semanal, búsqueda de extremos, filtrado sobre el promedio e impresión final.
+Para este desarrollo utilicé **arreglos unidimensionales**, **ciclos repetitivos** y **estructuras condicionales**, dividiendo el flujo del programa en bloques:
+
+- **Arreglos unidimensionales (`dias`, `ventas` y `dias_sobre_promedio`):** Los utilicé como estructura central de almacenamiento. Los dos primeros trabajan en juntos compartiendo el mismo índice para vincular cada día con su monto de venta, el tercero actúa como arreglo de ayuda para guardar únicamente los nombres de los días que superaron el promedio (personalmente fue mi unica idea, aunque no fue contemplado en la consigna).
+- **Ciclos de recorrido (`for`):** Los implementé apoyados en la constante `DIAS` para moverme sobre las 7 posiciones: esto ayuda con la captura de datos, listado y acumulación semanal, búsqueda de extremos, filtrado sobre el promedio e impresión final.
 - **Bucle de validación (`do-while` anidado):** Lo ubiqué dentro del `for` de entrada para garantizar que el monto de cada día se solicite al menos una vez y atrapar cualquier valor negativo (`ventas[i] < 0`), repitiendo la solicitud hasta recibir un dato válido.
 - **Estructuras condicionales (`if` / `else if`):** Las utilicé para emitir avisos de error al validar, comparar cada monto contra el valor inicial del lunes para actualizar la mayor y menor venta junto a su día, filtrar qué días superan el promedio diario y controlar la impresión limpia de comas en el resumen final.
+
+---
+
+En sí, creo que me tomo más del tiempo necesario. En lo personal este tipo de prácticas las realizo por prueba y error, sin la consola o el compilador no creo poder avanzar tanto como aquí, por ende le pido un consejo en base a este tipo de situaciones para evaluaciones futuras... 
+
+¡Gracias por leer!
