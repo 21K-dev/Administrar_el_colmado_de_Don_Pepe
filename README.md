@@ -33,7 +33,7 @@ Salida:
 ### Ejemplo No.1 (Flujo normal del programa)
 ![Ejecución del programa, flujo normal](Funcionamiento_normal.png)
 
-### Ejemplo No.2 (Repetición del ciclo completo)
+### Ejemplo No.2 (Validación de entradas positivas)
 ![Ejecución del programa, validaciones](Validacion_de_entradas_positivas.png)
 
 ## Estructura utilizada y su función
