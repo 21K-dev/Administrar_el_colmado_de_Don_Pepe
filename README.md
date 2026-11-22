@@ -31,13 +31,10 @@ Salida:
 
 ## Captura de pantalla del programa en ejecución
 ### Ejemplo No.1 (Flujo normal del programa)
-![Ejecución del programa, flujo normal](Ejemplo_1_funcional.png)
+![Ejecución del programa, flujo normal](Funcionamiento_normal.png)
 
 ### Ejemplo No.2 (Repetición del ciclo completo)
-![Ejecución del programa, validaciones](Ejemplo_2_repeticion.png)
-
-### Ejemplo No.3 (Validación de datos erróneos)
-![Ejecución del programa, repetición de grupo](Ejemplo_3_Validacion.png)
+![Ejecución del programa, validaciones](Validacion_de_entradas_positivas.png)
 
 ## Estructura utilizada y su función
 Para este desarrollo utilicé **arreglos unidimensionales**, **ciclos repetitivos** y **estructuras condicionales**, dividiendo el flujo del programa en bloques secuenciales claros y respetando las restricciones de usar una constante fija (`DIAS = 7`), no emplear matrices ni `vector` y mantener todo el código en un único archivo:
